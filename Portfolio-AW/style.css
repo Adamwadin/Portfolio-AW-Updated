@@ -518,6 +518,11 @@ header {
 .contact-content a:hover {
   color: #f0f0e6;
 }
+#githubLink {
+  color: #b5d9e9;
+  padding: 0.1rem;
+  transition: 0.3s ease-in-out;
+}
 
 @media (max-width: 500px) {
   html {
