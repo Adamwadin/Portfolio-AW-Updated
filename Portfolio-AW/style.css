@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color :#361e3f;
 }
 
 header {
@@ -65,6 +66,7 @@ header {
 .home-content .name h1 {
   font-size: 2.2rem;
   text-align: center;
+  color: #f0f0e6;
 }
 
 .home-content .name p {
@@ -188,21 +190,88 @@ header {
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .Cereculum {
- display: flex;
- align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 3rem 0;
-  width: 100%;
-  height: fit-content;
-  background: #7d3699;
-  color: rgb(172, 151, 151);
-  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: hsl(268, 71%, 87%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
-.Cereculum .CVname {
-  color: #f0f0e6;
- width: 80%;
-  margin: 3rem 0;
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  border-bottom: 2px solid #11153f; /* Yellow accent */
+  padding-bottom: 5px;
+}
+
+/* Experience section */
+.experience-item, .education-item {
+  margin-bottom: 20px;
+}
+
+.experience-item strong, .education-item strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.experience-item ul, .education-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-item ul li, .education-item ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-item ul li::before, .education-item ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  color: #4b0685; 
+}
+
+
+ul li {
+  margin-bottom: 10px;
+}
+
+
+.CVname {
+  padding: 20px;
+}
+
+
+.angle-down-icon a {
+  
+  text-align: center;
+
+}
+
+.angle-down-icon a i {
+  font-size: 30px;
+  color: #196375;
+  transition: color 0.3s;
+}
+
+.angle-down-icon a:hover i {
+  color: #00ccff; 
 }
 .Personalletter {
   color: rgb(161, 153, 153);
@@ -222,19 +291,19 @@ header {
 }
 
 .progress-line .html {
-  width: 80%;
+  width: 70%;
 }
 .progress-line .css {
-  width: 80%;
+  width: 70%;
 }
 .progress-line .bootstrap {
-  width: 70%;
+  width: 55%;
 }
 .progress-line .javascript {
-  width: 70%;
+  width: 50%;
 }
 .progress-line .c {
-  width: 90%;
+  width: 77%;
 }
 
 .bar .progress-line span::before {
@@ -264,22 +333,22 @@ header {
 }
 
 .progress-line .html::after {
-  content: "80%";
+  content: "Very good";
 }
 .progress-line .css::after {
-  content: "80%";
+  content: "Very good";
 }
 .progress-line .bootstrap::after {
-  content: "70%";
+  content: "Good";
 }
 .progress-line .javascript::after {
-  content: "70%";
+  content: "Good";
 }
 .progress-line .c::after {
-  content: "90%";
+  content: "Very good";
 }
 .Cereculum p{
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .Cereculum h1 {
