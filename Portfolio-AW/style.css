@@ -600,26 +600,24 @@ header {
 }
 
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   html {
     font-size: 65%;
   }
 
-
-  
-  
 
   .navbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
+    padding: 10px 20px;
     background-color: #6c37b1;
     width: 100%;
     color: rgb(255, 255, 255);
     z-index: 1000;
     opacity: 0.9;
+    margin-bottom: 20px;
   }
   
   .menu-items {
@@ -641,7 +639,7 @@ header {
     
     max-height: fit-content;
     opacity: 1; 
-    transform: translateY(30px); 
+    transform: translateY(-10px); 
     background-color: #000000;
     
   }
@@ -738,24 +736,15 @@ header {
   .angle-down-icon a {
     font-size: 1.2rem;
   }
-}
-
-/* Tablet responsiveness */
-@media screen and (max-width: 768px) {
-  .CVname {
-    padding: 18px;
-  }
-
-  .CVname h1 {
-    font-size: 1.75rem;
-  }
-
-  .CVname p {
+  .Personalletter {
+    color: rgb(161, 153, 153);
+    position: relative;
+    text-align: center;
+    
+    width: 100%;
+    height:fit-content;
+    background: #2b013c;
     font-size: 1rem;
-  }
-
-  .angle-down-icon a {
-    font-size: 1.3rem;
   }
 }
 
