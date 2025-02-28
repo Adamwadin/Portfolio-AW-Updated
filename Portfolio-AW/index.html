@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Wadin</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+   
     <script
       src="https://kit.fontawesome.com/66aa7c98b3.js"
       crossorigin="anonymous"
@@ -20,12 +22,13 @@
     <header class="header">
       <nav class="navbar">
         <div class="navbar-container container">
-          <div>
-            <h1 class="navbar-brand">Adam Wadin</h1>
+         
+          
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
           </div>
           <ul class="menu-items">
             <li><a href="#home-page">Home</a></li>
-
             <li><a href="#CV">CV</a></li>
             <li><a href="#Personal-letter">Personalletter</a></li>
             <li><a href="#about">About</a></li>
@@ -34,6 +37,7 @@
           </ul>
         </div>
       </nav>
+      
       <div class="home-content" id="home-page">
         <div class="name">
           <h1>Hi, i'm Adam Wadin</h1>
@@ -54,40 +58,59 @@
       </div>
     </header>
     <div class="Cereculum" id="CV">
-      <div class="name">
+      <div class="CVname">
         <h1>CV</h1>
-        <p>Education and work:</p>
+        <strong>Experience:</strong>
         <br />
         <p>
-          Education: <br />
+          <strong>Oct 2024 – Present: HeyEy AB, Stockholm</strong><br />
+          Front-end Developer (LIA)<br />
+          • Built a website for an app using Next.js, React, TypeScript, CSS, and Redux.<br />
+          • API management and integration with third-party systems to enhance functionality and data sharing.<br />
+          • Worked on problem-solving to address bugs and improve user experience on the website.<br />
+          • Managed tickets and delivered features or fixed problems within deadlines.<br />
+          • Participated in daily standups to discuss progress, ideas, solutions, and challenges.<br />
+          • Worked in an agile team, with a focus on collaboration and communication.<br />
           <br />
-
-          Solna Gymnasium • El- Energi programmet, inriktning Data aug 2015- aug
-          2018 <br />
+          <strong>Mar 2022 – Present: Lidl Sverige AB, Stockholm</strong><br />
+          Store Employee (50% + 100% studies)<br />
           <br />
-          • Medieinstitutet Webbutveckling, Inriktning E-handel aug 2023- now<br /><br />
-
-          Employment: <br />
-
-          • LIDL 50% and Education 100%. Full-time Mars 2022 – now <br /><br />
-          • Projects-salesman RMS Lagerinredningar AB, Full-time Feb 2020- Mars
-          2022
+          <strong>Feb 2020 – Mar 2022: RMS Lagerinredningar AB, Stockholm</strong><br />
+          Project Salesperson<br />
+          • Held significant responsibility for the entire process, from first customer contact to completed project.<br />
+          • Technical ability to measure, create drawings, and customize the product according to customer needs.<br />
+          • Managed projects including booking installers, trucks, forklifts, handling orders, invoicing, and inspections.<br />
           <br />
+          <strong>May 2018 – Feb 2020: Trademax, Stockholm</strong><br />
+          Salesperson<br />
+          • Adapted to different customers and provided advice based on their needs.<br />
+          • Worked closely with colleagues to achieve the store's sales goals.<br />
+          • Handled stressful situations, such as dealing with many customers and dissatisfied customers.<br />
           <br />
-          • Furniturestore Trademax, Salesman, Full-time may 2018 – Feb 2020
+          <strong>Education:</strong>
           <br />
+          <strong>Aug 2023 – Present: Web Development with E-Commerce, Medieinstitutet, Stockholm</strong><br />
+          • The program focuses on developing, customizing, and integrating various systems for different types of websites. Gained knowledge in both frontend and backend, including database management, system integrations, and working with various e-commerce platforms.<br />
+          • Completed LIA and participated in developing a website based on client needs.<br />
           <br />
-          • Toystore Toy o TØy, Storeclerk, Part-time sep 2016 - may 2018<br /><br />
-
-          Internship <br />
-          • HeyEy AB, Intern Front-end Developer, Full-time sep 2024 okt – may 2025<br />
-          •Intern Electronicstore Inet Storeclerk, full-time jan 2018 – may 2018
+          <strong>Courses:</strong><br />
+          ● <strong>Frontend & Backend Development</strong> – HTML, CSS, JavaScript, Frameworks, PHP, SQL, React, Typescript.<br />
+          ● <strong>System Development</strong> – PHP, object-oriented and functional programming, optimization and testing, server environments, and server technologies.<br />
+          ● <strong>Database Technology</strong> – Database knowledge, database connections, database communication, tools, and database optimization, SQL, and document databases.<br />
+          ● <strong>Responsive Web Development</strong> – Handling relevant mobile solutions and mobile e-commerce and document databases.<br />
+          ● <strong>E-commerce Systems</strong> – Develop for common e-commerce systems such as WooCommerce, WordPress.<br />
+          ● <strong>System Support and Third-Party Systems</strong> – Payment systems, business systems, and logistics within e-commerce, API development.<br />
+          ● <strong>Intern</strong> – Gaining practical experience with companies to work on real projects.<br />
+          ● <strong>Final Project</strong> – A self-developed booking page for an apartment with functional database management for bookings, payment solutions, and responsive design.<br />
+          <br />
+          
         </p>
       </div>
       <div class="angle-down-icon">
         <a href="#Personal-letter"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
+    
     <div class="Personalletter" id="Personal-letter">
      
       
@@ -135,12 +158,8 @@
             <div>
               <h1 class="about-heading">About Me</h1>
             </div>
-            <img src="public/bild på beppe.jpg" alt="image" />
-            <p>
-              I am 25 year old, webdeveloper-student studying at Medieinstitutet
-              . I really enjoy solving problems as well as making things pretty
-              and easy to use.
-            </p>
+            <img src="public/bild på bneppe.jpg" alt="image" />
+          
             <div class="work-arrow">
               <p>
                 <a href="#my-works"
@@ -198,7 +217,7 @@
               <div class="work-arrow-2">
                 <p>
                   <a href="#my-works"
-                    >Check out my 2 week school-projects
+                    >Check out my projects
                     <i class="fas fa-arrow-down"></i
                   ></a>
                 </p>
@@ -340,7 +359,7 @@
               <i class="fab fa-js"></i>
               <h2>TicTacToe game</h2>
               <p>Build Using HTML,CSS,ReactJS</p>
-              <p>Built and designed by Adam</p>
+              <p>Designed by Adam</p>
               <br />
               <p>Fully functional tictactoe-App</p>
               <button>
@@ -391,5 +410,14 @@
 
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+     
+      function toggleMenu() {
+        const menuItems = document.querySelector('.menu-items');
+        menuItems.classList.toggle('active');
+      }
+    </script>
+  
   </body>
 </html>
