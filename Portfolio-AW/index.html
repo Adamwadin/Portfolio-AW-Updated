@@ -31,7 +31,7 @@
           <ul class="menu-items">
             <li><a href="#home-page">Home</a></li>
             <li><a href="#CV">CV</a></li>
-            <li><a href="#Personal-letter">Personalletter</a></li>
+            <li><a href="#Personal-letter">Personal Letter</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#my-works">Portfolio</a></li>
             <li><a href="#contact-me">Contact</a></li>
@@ -45,7 +45,7 @@
           <p>A Web Developer under development.</p>
           <br /><br />
           <p>
-            Hi, I'm Adam, and I'm seeking a position where I can apply my skills
+           I'm currently seeking a position where I can apply my skills
             and continue growing professionally.<br />
             <br />I have a academic background and a passion for learning. I'm
             hardworking, adaptable, and ready to contribute to a dynamic team.
@@ -79,10 +79,10 @@
               <div class="timeline">
                 <!-- Experience Item 1 -->
                 <div class="timeline-item">
-                  <div class="timeline-marker"></div>
+                  <div class="timeline-marker-present"></div>
                   <div class="timeline-content">
                     <div class="item-header">
-                      <span class="date-badge">Oct 2024 - Present</span>
+                      <span class="date-badge-present">Oct 2024 - Present</span>
                       <h3 class="item-title">Front-end Developer (LIA)</h3>
                       <div class="item-subtitle">HeyEy AB, Stockholm</div>
                     </div>
@@ -98,11 +98,11 @@
                 
                 <!-- Experience Item 2 -->
                 <div class="timeline-item">
-                  <div class="timeline-marker"></div>
+                  <div class="timeline-marker-present"></div>
                   <div class="timeline-content">
                     <div class="item-header">
-                      <span class="date-badge">Mar 2022 - Present</span>
-                      <h3 class="item-title">Store Employee</h3>
+                      <span class="date-badge-present">Mar 2022 - Present</span>
+                      <h3 class="item-title">Store Employee + Education</h3>
                       <div class="item-subtitle">Lidl Sverige AB, Stockholm</div>
                     </div>
                     <div class="item-note">Working 50% while completing 100% studies</div>
@@ -132,7 +132,7 @@
                   <div class="timeline-content">
                     <div class="item-header">
                       <span class="date-badge">May 2018 - Feb 2020</span>
-                      <h3 class="item-title">Salesperson</h3>
+                      <h3 class="item-title"> Salesperson </h3>
                       <div class="item-subtitle">Trademax, Stockholm</div>
                     </div>
                     <ul class="item-details">
@@ -152,12 +152,11 @@
               </h2>
               
               <div class="timeline">
-                <!-- Education Item -->
                 <div class="timeline-item">
                   <div class="timeline-marker edu-marker"></div>
                   <div class="timeline-content">
                     <div class="item-header">
-                      <span class="date-badge">Aug 2023 - Present</span>
+                      <span class="date-badge-present">Aug 2023 - Present</span>
                       <h3 class="item-title">Web Development with E-Commerce Focus</h3>
                       <div class="item-subtitle">Medieinstitutet, Stockholm</div>
                     </div>
@@ -169,6 +168,7 @@
                     </ul>
                   </div>
                 </div>
+              
               </div>
             </div>
           </div>
@@ -473,7 +473,7 @@
                 Fictional restaurant website with a functional table booking system.
               </p>
               <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-user"></i> Solo Project</span>
+                <span class="meta-item"><i class="fas fa-users"></i>Team Project</span>
               </div>
               <a href="https://github.com/Medieinstitutet/the-restaurant-ls-aw-ks.git" target="_blank" class="project-link">
                 <i class="fab fa-github"></i> Source Code
@@ -504,7 +504,7 @@
                 Fictional e-commerce subscription service with a functional checkout system.
               </p>
               <div class="project-meta">
-                <span class="meta-item"><i class="fas fa-user"></i> Solo Project</span>
+                <span class="meta-item"><i class="fas fa-users"></i> Team Project</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/Medieinstitutet/the-webshop-codecrafters-1-0.git" target="_blank" class="project-link">
@@ -553,7 +553,6 @@
             </div>
           </div>
           
-          <!-- Project 6: TicTacToe -->
           <div class="project-card">
             <div class="project-image">
               <img src="public/tictacspel.PNG" alt="TicTacToe Game" />
@@ -630,6 +629,33 @@
         const menuItems = document.querySelector(".menu-items");
         menuItems.classList.toggle("active");
       }
+
+     
+    function toggleMenu() {
+      const menuItems = document.querySelector('.menu-items');
+      menuItems.classList.toggle('active');
+      
+      const hamburger = document.querySelector('.hamburger-menu i');
+      if (menuItems.classList.contains('active')) {
+        hamburger.classList.remove('fa-bars');
+        hamburger.classList.add('fa-times');
+      } else {
+        hamburger.classList.remove('fa-times');
+        hamburger.classList.add('fa-bars');
+      }
+    }
+
+    document.addEventListener('click', function(event) {
+      const menuItems = document.querySelector('.menu-items');
+      const hamburger = document.querySelector('.hamburger-menu');
+      
+      if (menuItems.classList.contains('active') && 
+          !menuItems.contains(event.target) && 
+          !hamburger.contains(event.target)) {
+        toggleMenu();
+      }
+    });
+  
     </script>
   </body>
 </html>
