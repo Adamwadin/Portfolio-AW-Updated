@@ -306,7 +306,17 @@ header {
   margin-top: 2rem;
 }
 
-
+.profile-picture
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #7e3af2;
+  box-shadow: 0 10px 30px rgba(126, 58, 242, 0.1);
+}
 
 
 .home-content .name {
@@ -884,7 +894,24 @@ ul li {
     transition: right 0.3s ease;
 
   }
- 
+  .profile-picture
+{
+  margin-top: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid #7e3af2;
+  box-shadow: 0 10px 30px rgba(126, 58, 242, 0.1);
+}
+.home-content .name {
+  top: 50%;
+  margin-top: 25px;
+}
+
+
 
   .menu-items.active {
     right: 0;
@@ -1273,6 +1300,30 @@ ul li {
     font-size: 2rem;
   }
 }
+.header {
+  background-color: #351f50;
+  height: 100vh;
+}
+
+.angle-down-icon-cv {
+  position: absolute;
+  
+
+  bottom: 0;
+  left: 45%;
+  transform: translateX(-50%, -50%);
+  font-size: 2rem;
+  border: 3px solid #63c5ee;
+  border-radius: 50%;
+}
+
+.angle-down-icon-cv a {
+  text-decoration: none;
+  color: #63c5ee;
+  padding: 1rem;
+}
+
+
 
 @media (max-width: 480px) {
   .projects-grid {
@@ -1396,7 +1447,7 @@ ul li {
   }
 
   .angle-down-icon a {
-    font-size: 1.2rem;
+    font-size: 1px;
   }
   .Personalletter {
     color: rgb(161, 153, 153);
